@@ -1,0 +1,32 @@
+{
+  "name": "cpw2-web-storage",
+  "version": "1.0.0",
+  "description": "Exercício de Web Storage",
+  "main": "index.js",
+  "scripts": {
+    "start": "http-server",
+    "cy:run": "cypress run --browser chrome",
+    "test": "start-server-and-test start http://localhost:8080 cy:run"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rpmhub/cpw2-web-storage.git"
+  },
+  "keywords": [
+    "cpw2",
+    "web-storage"
+  ],
+  "author": "Rodrigo Prestes Machado",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rpmhub/cpw2-web-storage/issues"
+  },
+  "homepage": "https://github.com/rpmhub/cpw2-web-storage#readme",
+  "devDependencies": {
+    "cypress": "^9.1.1",
+    "start-server-and-test": "^1.14.0"
+  },
+  "dependencies": {
+    "http-server": "^14.0.0"
+  }
+}

@@ -1,6 +1,6 @@
-describe('Exercise tester', () => {
+describe('Tester', () => {
   it('Checking page elements', function() {
-      cy.visit('http://localhost/index.html');
+      cy.visit('http://localhost:5501/index.html');
       cy.get('#text');
       cy.get('#color');
       cy.get('#font').select('Monaco');
