@@ -15,16 +15,13 @@
     <br />
     <label for="font">Fonte do título do fundo: </label>
     <!--
-      (1) - Implemente um HTML select para trocar a font do texto Web Storage
-      que está contido em um parágrafo:
-        a) Identificador (id) do parágrafo deve ser igual a "font"
-        b) As opções do HTML select devem ser: Arial, Monaco e Bradley Hand
+      1 - Implemente um HTML select para trocar a fonte do texto Web Storage que, nesse projeto,
+      está contido em um parágrafo. Algumas regras devem ser observadas:
+
+        * O Identificador do HTML select (id) deve ser igual a "font"
+
+        * As opções do HTML select devem ser: Arial, Monaco e Bradley Hand
     -->
-    <select name="select" id="font" onchange="changeFont()">
-      <option value="arial" selected>Arial</option>
-      <option value="Monaco">Monaco</option>
-      <option value="Bradley Hand">Bradley Hand</option>
-    </select>
 
     <script>
       /**
@@ -42,14 +39,11 @@
        */
       function changeFont() {
         /**
-         * (2) Implemente o corpo do método `changeFont`. Este método deve
-         * ser capaz de trocar a fonte do texto `Web Storage` e também
-         * salvar o valor escolhido no no local localStorage.
+         * 2 - Implemente o corpo do método `changeFont`. Este método deve ser capaz
+         * de trocar a fonte do texto `Web Storage` e também salvar o valor
+         * escolhido no no local *localStorage* sempre que o usuário selecionar
+         * o tipo da fonte por meio do HTML select.
          */
-        let p = document.getElementById("text");
-        let selectFont = document.getElementById("font");
-        p.style.fontFamily = selectFont.value;
-        localStorage.setItem("font", selectFont.value);
       }
 
       /**
@@ -58,8 +52,8 @@
       function load() {
         document.body.style.backgroundColor = localStorage.getItem("color");
         /**
-         * (3) Altere o método `load` para recuperar o nome da fonte do
-         * `localStorage` e estilizar o texto `Web Storage`.
+         * 3 - Altere o método `load` para recuperar o nome da fonte do *localStorage* e
+         * estilizar o texto `Web Storage`
          */
       }
     </script>
