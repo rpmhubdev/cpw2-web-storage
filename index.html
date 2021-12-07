@@ -20,11 +20,11 @@
         a) Identificador (id) do parágrafo deve ser igual a "font"
         b) As opções do HTML select devem ser: Arial, Monaco e Bradley Hand
     -->
-    <select name="select" id="font" onchange="changeFont()">
+    <!-- <select name="select" id="font" onchange="changeFont()">
       <option value="arial" selected>Arial</option>
       <option value="Monaco">Monaco</option>
       <option value="Bradley Hand">Bradley Hand</option>
-    </select>
+    </select> -->
 
     <script>
       /**
@@ -44,12 +44,12 @@
         /**
          * (2) Implemente o corpo do método `changeFont`. Este método deve
          * ser capaz de trocar a fonte do texto `Web Storage` e também
-         * salvar o valor escolhido no no local localStorage.
+         * salvar o valor escolhido no local localStorage.
          */
-        let p = document.getElementById("text");
-        let selectFont = document.getElementById("font");
-        p.style.fontFamily = selectFont.value;
-        localStorage.setItem("font", selectFont.value);
+        // let p = document.getElementById("text");
+        // let selectFont = document.getElementById("font");
+        // p.style.fontFamily = selectFont.value;
+        // localStorage.setItem("font", selectFont.value);
       }
 
       /**
@@ -61,6 +61,7 @@
          * (3) Altere o método `load` para recuperar o nome da fonte do
          * `localStorage` e estilizar o texto `Web Storage`.
          */
+        // p.style.fontFamily = localStorage.getItem("font");
       }
     </script>
   </body>
